@@ -1,0 +1,6 @@
+name: GANNI SRAVANI
+SUC number: 2367250110
+COURSE: cloud computing
+Section: A
+Branch: BSC
+location: Gajuwaka
