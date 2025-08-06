@@ -1,0 +1,75 @@
+:root {
+  --bg-color: #f9f9f9;
+  --card-bg1: #ffb6b6;
+  --card-bg2: #ffd6a5;
+  --card-bg3: #fdffb6;
+  --card-bg4: #caffbf;
+  --card-bg5: #9bf6ff;
+  --card-bg6: #a0c4ff;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: #666;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.quote-card {
+  background: var(--card-bg1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+.quote-card:nth-child(2) { background: var(--card-bg2); }
+.quote-card:nth-child(3) { background: var(--card-bg3); }
+.quote-card:nth-child(4) { background: var(--card-bg4); }
+.quote-card:nth-child(5) { background: var(--card-bg5); }
+.quote-card:nth-child(6) { background: var(--card-bg6); }
+
+/* Animation delays for staggered effect */
+.delay1 { animation-delay: 0.2s; }
+.delay2 { animation-delay: 0.4s; }
+.delay3 { animation-delay: 0.6s; }
+.delay4 { animation-delay: 0.8s; }
+.delay5 { animation-delay: 1s; }
+.delay6 { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #999;
+}
