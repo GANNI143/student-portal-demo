@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickTasks - To-Do List</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+  <header class="header">
+    <h1>QuickTasks</h1>
+    <p>Organize your day with a simple to-do list</p>
+  </header>
+
+  <main class="container">
+    <!-- Task Input -->
+    <section class="task-input">
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." required />
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <!-- Task List -->
+    <section class="task-list">
+      <ul id="tasks">
+        <!-- Example Task (Static) -->
+        <li>
+          <input type="checkbox" id="task1" />
+          <label for="task1">Example Task</label>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 QuickTasks</p>
+  </footer>
+
+</body>
+</html>
